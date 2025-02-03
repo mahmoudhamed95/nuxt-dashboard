@@ -37,7 +37,7 @@ onMounted(fetchProducts);
     <!-- Product list -->
     <div v-if="products.length" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
       <div v-for="product in products" :key="product.id" class="bg-white rounded-lg shadow-lg hover:shadow-xl transition-shadow">
-        <img :src="product.images[0]" alt="Product Image" class="w-full h-48 object-cover rounded-t-lg" />
+        <img :src="JSON.parse(product.images)[0]" alt="Product Image" class="w-full h-48 object-cover rounded-t-lg" />
         <div class="p-4">
           <h2 class="text-sm font-semibold mb-2">{{ product.title }}</h2>
           <p class="text-sm text-gray-600 mb-4">{{ product.description }}</p>
