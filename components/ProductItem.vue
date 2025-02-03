@@ -15,7 +15,7 @@ const truncateText = (text, length) => {
 <template>
   <div class="bg-white rounded-lg shadow-lg hover:shadow-xl transition-shadow">
     <!-- Parse the image URL from the stringified array -->
-    <img :src="JSON.parse(product.images)[0]" alt="Product Image" class="w-full h-48 object-cover rounded-t-lg" />
+    <img :src="product.images[0]" alt="Product Image" class="w-full h-48 object-cover rounded-t-lg" />
     <div class="p-4">
       <h2 class="text-sm font-semibold mb-2">{{ product.title }}</h2>
 

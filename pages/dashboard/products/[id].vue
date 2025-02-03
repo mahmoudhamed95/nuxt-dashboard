@@ -38,7 +38,7 @@ onMounted(fetchProduct);
     <!-- Product details -->
     <div v-if="product" class="bg-white p-6 shadow-md rounded-lg">
       <div class="flex">
-        <img :src="JSON.parse(product.images)[0]" alt="Product Image" class="w-48 h-48 object-cover rounded-lg" />
+        <img :src="product.images[0]" alt="Product Image" class="w-48 h-48 object-cover rounded-lg" />
         <div class="ml-6">
           <h2 class="text-xl font-semibold">{{ product.title }}</h2>
           <p class="text-sm text-gray-600 my-2">{{ product.description }}</p>
